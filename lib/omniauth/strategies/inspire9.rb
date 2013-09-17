@@ -8,6 +8,7 @@ module OmniAuth
         :authorize_url    => "#{DEFAULT_PROVIDER_URL}/access/authorize",
         :access_token_url => "#{DEFAULT_PROVIDER_URL}/access/token"
       }
+      option :provider_ignores_state, true
 
       uid { raw_info['id'] }
 
